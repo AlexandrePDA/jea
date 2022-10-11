@@ -15,21 +15,21 @@ const Header = () => {
       ];
 
   return (
-    <header className="h-16 w-full shadow-md ">
+    <header className="h-16 w-full ">
       <div className="mx-8 items-center justify-between md:flex">
         <div className="cursor-pointer flex items-center  text-light-p">
           <img src={logo} alt="logo jea" className="h-16" />
-          <p className="text-base ml-2 md:text-xl">JEA</p>
+          
         </div>
         <div
           onClick={() => setBurger(!burger)}
           className="text-3xl absolute right-8 top-4 text-light-p cursor-pointer md:hidden"
         >
-          <ion-icon name={burger ? "close-circle-sharp" : "grid-outline"}></ion-icon>
+          <ion-icon name={burger ? "close-circle-sharp" : "menu-sharp"}></ion-icon>
         </div>
 
-        <ul className={`bg-dark-p text-light-p pb-12 pl-12 pt-12 absolute text-center z-[-1] w-full left-0 transition-all duration-300 ease-in ${
-            burger ? "top-10 opacity-100" : "top-[-490px]"
+        <ul className={`bg-dark-p text-light-p pb-12 pl-12 pt-14  absolute text-center  w-full left-0 transition-all duration-300 ease-in ${
+            burger ? "top-10  opacity-100 z-40" : "top-[-490px]"
           } opacitiy-0 md:opacity-100 md:z-auto md:w-auto md:static md:flex md:items-center md:pt-0 md:pb-0 md:pl-0`}
         >
             
